@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotelzimmer-Buchungssystem</title>
-
 </head>
 <body>
-
 <h1>Hotelzimmer-Buchungssystem</h1>
-
-
+<form action="https://example.com/hotelbooking" method="post">
+  <fieldset>
+    <legend>Zimmertyp</legend>
+    <label for="Zimmertyp">Wählen Sie die Zimmerkategorie:</label>
+    <select id="Zimmertyp" name="Zimmertyp[]" multiple>
+      <option value="Einzelzimmer">Einzelzimmer</option>
+      <option value="Doppelzimmer">Doppelzimmer</option>
+      <option value="Suite">Suite</option>
+      <option value="Family-Room">Family-Room</option>
+      <option value="Business-Room">Business-Room</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <label for=>Wählen Sie beliebig viele Zusatzleistungen:</label>
+    <input type="checkbox" name="zusatzleistungen[]" value="Frühstück"> Frühstück
+    <input type="checkbox" name="zusatzleistungen[]" value="Flughafentransfer"> Flughafentransfer
+    <input type="checkbox" name="zusatzleistungen[]" value="Spa-Zugang"> Spa-Zugang
+    <input type="checkbox" name="zusatzleistungen[]" value="Fitness-Zugang"> Fitness-Zugang
+    <input type="checkbox" name="zusatzleistungen[]" value="Parkplatz"> Parkplatz
+  </fieldset>
+  <button type="submit">Buchen</button>
+</form>
 </body>
 </html>
